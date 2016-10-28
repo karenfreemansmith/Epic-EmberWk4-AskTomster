@@ -1,6 +1,6 @@
 {{#if listAnswers}}
   <button {{action 'hideAnswers'}} class="button">Hide Answers</button>
-  {{#each model as |answer|}}
+  {{#each model.answers as |answer|}}
     <h5>{{answer.username}}</h5>
     <p>{{answer.text}}</p>
   {{/each}}

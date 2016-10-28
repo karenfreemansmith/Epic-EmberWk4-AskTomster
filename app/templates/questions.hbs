@@ -15,10 +15,3 @@
 {{#each model.questions as |question|}}
   {{list-questions question=question editQuestion="editQuestion" saveAnswer="saveAnswer"}}
 {{/each}}
-
-<h2>All Answers</h2>
-<ul>
-  {{#each model.answers as |answer|}}
-    <li>{{answer.text}} - by {{answer.username}}</li>
-  {{/each}}
-</ul>

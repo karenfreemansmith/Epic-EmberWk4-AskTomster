@@ -19,8 +19,11 @@
   {{else}}
     <p>{{{question.details}}}</p>
     <h4>Tomster's Answer: {{question.tomster}}</h4>
-    <p>{{answer-question saveAnswer="saveAnswer"}}</p>
-    <p>{{list-answers}}</p>
+    <p>{{answer-question saveAnswer="saveAnswer" question=question}}</p>
+    {{#each question.answers as |answer|}}
+      <h5>{{answer.username}}</h5>
+      <p>{{{answer.text}}}</p>
+    {{/each}}
     <button {{action 'showEditForm'}} class="button">Edit Question</button>
   {{/if}}
   <button {{action 'hideDetails'}} class="button">Hide Details</button>
