@@ -8,9 +8,9 @@ export default Ember.Component.extend({
     },
     saveQuestion: function() {
       var params = {
-        username: this.get('username'),
-        question: this.get('question'),
-        details: this.get('details'),
+        username: this.get('username') ? this.get('username') : "",
+        title: this.get('title') ? this.get('title') : "",
+        details: this.get('details') ? this.get('details') : "",
         tomster: 'It may be so',
       };
       this.set('askQuestion', false);

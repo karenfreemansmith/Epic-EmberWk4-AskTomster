@@ -12,6 +12,13 @@
   </p>
 </div>
 {{ask-question saveQuestion="saveQuestion"}}
-{{#each model as |question|}}
-  {{list-questions question=question}}
+{{#each model.questions as |question|}}
+  {{list-questions question=question editQuestion="editQuestion"}}
 {{/each}}
+
+<h2>All Answers</h2>
+<ul>
+  {{#each model.answers as |answer|}}
+    <li>{{answer.text}} - by {{answer.username}}</li>
+  {{/each}}
+</ul>

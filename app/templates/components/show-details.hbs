@@ -1,8 +1,28 @@
+
 {{#if details}}
-  <p>{{{question.details}}}</p>
-  <h4>Tomster's Answer: {{question.tomster}}</h4>
-  <p>{{answer-question}}</p>
-  <p>{{list-answers}}</p>
+  {{#if updateQuestion}}
+    <h3>Edit Question</h3>
+    <form>
+      <div>
+        <p>What is your name? {{input value=username placeholder=question.username id="username"}}</p>
+      </div>
+      <div>
+        <p>What is your question? {{input value=title placeholder=question.title id="title"}}</p>
+      </div>
+      <div>
+        <p>Are there any other details that we should know about your question?</p>
+        <p>Previous response: <em>{{question.details}}</em></p>
+        {{textarea value=details id="details"}}
+      </div>
+      <button {{action 'saveQuestion' question}} class="button">Update Question</button>
+    </form>
+  {{else}}
+    <p>{{{question.details}}}</p>
+    <h4>Tomster's Answer: {{question.tomster}}</h4>
+    <p>{{answer-question}}</p>
+    <p>{{list-answers}}</p>
+    <button {{action 'showEditForm'}} class="button">Edit Question</button>
+  {{/if}}
   <button {{action 'hideDetails'}} class="button">Hide Details</button>
 {{else}}
   <button {{action 'showDetails'}} class="button">Show Details</button>
