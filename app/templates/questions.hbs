@@ -1,20 +1,31 @@
 <div class="jumbo">
   <div class="right tomster"></div>
   <h2>Welcome!</h2>
-  <p>Tomster is always here for you whenever you need him.</p>
-  <ul>
-    <li>Ask Tomster a question</li>
-    <li>Get an answer from Tomster</li>
-    <li>Think you have a better answer than Tomster? You can answer questions too!</p>
-    <li>Get feedback from the entire community.</li>
-  </ul>
+  <p>
+    Tomster is always here for you whenever you need him.
+    <ul>
+      <li>Ask Tomster a question</li>
+      <li>Get an answer from Tomster</li>
+      <li>Think you have a better answer than Tomster? You can answer questions too!</li>
+      <li>Get feedback from the entire community.</li>
+    </ul>
+  </p>
+</div>
+<div>
   {{#link-to 'about' class="button"}}
     Ask a Question
   {{/link-to}}
+  <h3>Ask Tomster a Question</h3>
+  <form>
+    <div>
+      <p>What is your name? {{input value="your name" id="username"}}</p>
+    </div>
+    <div>
+      <p>What is your question? {{input value="your question" id="question"}}</p>
+    </div>
+    <div>
+      <p>Are there any other details that we should know about your question?</p>
+      {{tinymce-editor options=options value=text id="notes"}}
+    </div>
+  </form>
 </div>
-<a href="http://learnhowtoprogram.com/javascript">JavaScript</a> class.</p>
-<form>
-  {{input value="your name" id="username"}}
-  {{input value="your question" id="question"}}
-  {{tinymce-editor options=options value=text id="notes"}}
-</form>
