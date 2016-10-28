@@ -1,0 +1,9 @@
+{{#if details}}
+  <p>{{{question.details}}}</p>
+  <h4>Tomster's Answer: {{question.tomster}}</h4>
+  <p>{{answer-question}}</p>
+  <p>{{list-answers}}</p>
+  <button {{action 'hideDetails'}} class="button">Hide Details</button>
+{{else}}
+  <button {{action 'showDetails'}} class="button">Show Details</button>
+{{/if}}
