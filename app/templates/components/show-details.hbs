@@ -3,13 +3,13 @@
   {{#if updateQuestion}}
     <h3>Edit Question</h3>
     <form>
-      <div>
+      <div class="form-group">
         <p>What is your name? {{input value=username placeholder=question.username id="username"}}</p>
       </div>
-      <div>
+      <div class="form-group">
         <p>What is your question? {{input value=title placeholder=question.title id="title"}}</p>
       </div>
-      <div>
+      <div class="form-group">
         <p>Are there any other details that we should know about your question?</p>
         <p>Previous response: <em>{{question.details}}</em></p>
         {{textarea value=details id="details"}}
@@ -19,7 +19,7 @@
   {{else}}
     <p>{{{question.details}}}</p>
     <h4>Tomster's Answer: {{question.tomster}}</h4>
-    <p>{{answer-question}}</p>
+    <p>{{answer-question saveAnswer="saveAnswer"}}</p>
     <p>{{list-answers}}</p>
     <button {{action 'showEditForm'}} class="button">Edit Question</button>
   {{/if}}

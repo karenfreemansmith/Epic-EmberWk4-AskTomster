@@ -4,6 +4,9 @@ export default Ember.Component.extend({
   actions: {
     editQuestion: function(question, params) {
       this.sendAction('editQuestion', question, params);
+    },
+    saveAnswer(params) {
+      this.sendAction('saveAnswer', params);
     }
   }
 });

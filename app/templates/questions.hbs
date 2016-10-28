@@ -13,7 +13,7 @@
 </div>
 {{ask-question saveQuestion="saveQuestion"}}
 {{#each model.questions as |question|}}
-  {{list-questions question=question editQuestion="editQuestion"}}
+  {{list-questions question=question editQuestion="editQuestion" saveAnswer="saveAnswer"}}
 {{/each}}
 
 <h2>All Answers</h2>

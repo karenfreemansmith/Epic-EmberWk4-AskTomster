@@ -14,6 +14,9 @@ export default Ember.Component.extend({
       this.set('updateQuestion', false);
       this.sendAction('editQuestion', question, params);
     },
+    saveAnswer(params) {
+      this.sendAction('saveAnswer', params);
+    },
     showEditForm: function() {
       this.set('updateQuestion', true);
     },

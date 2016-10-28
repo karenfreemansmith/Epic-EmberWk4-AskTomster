@@ -7,7 +7,12 @@ export default Ember.Component.extend({
       this.set('answerQuestion', true);
     },
     saveAnswer: function() {
+      var params = {
+        username: this.get('username'),
+        text: this.get('text')
+      };
       this.set('answerQuestion', false);
+      this.sendAction('saveAnswer', params);
     }
   }
 });

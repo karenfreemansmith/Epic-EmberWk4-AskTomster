@@ -2,13 +2,13 @@
   {{#if askQuestion}}
     <h3>Ask Tomster a Question</h3>
     <form>
-      <div>
+      <div class="form-group">
         <p>What is your name? {{input value=username id="username"}}</p>
       </div>
-      <div>
+      <div class="form-group">
         <p>What is your question? {{input value=title id="title"}}</p>
       </div>
-      <div>
+      <div class="form-group">
         <p>Are there any other details that we should know about your question?</p>
         {{tinymce-editor options=options value=details id="details"}}
       </div>
