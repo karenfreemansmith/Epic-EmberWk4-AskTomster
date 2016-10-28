@@ -1,8 +1,20 @@
 <div class="jumbo">
   <div class="right tomster"></div>
   <h2>Welcome!</h2>
-  <p>We hope you find exactly what you're looking for in a place to stay.</p>
+  <p>Tomster is always here for you whenever you need him.</p>
+  <ul>
+    <li>Ask Tomster a question</li>
+    <li>Get an answer from Tomster</li>
+    <li>Think you have a better answer than Tomster? You can answer questions too!</p>
+    <li>Get feedback from the entire community.</li>
+  </ul>
   {{#link-to 'about' class="button"}}
-    About Us
+    Ask a Question
   {{/link-to}}
 </div>
+<a href="http://learnhowtoprogram.com/javascript">JavaScript</a> class.</p>
+<form>
+  {{input value="your name" id="username"}}
+  {{input value="your question" id="question"}}
+  {{tinymce-editor options=options value=text id="notes"}}
+</form>
