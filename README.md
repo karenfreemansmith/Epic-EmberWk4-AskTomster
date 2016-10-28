@@ -1,5 +1,7 @@
 # Ember Q&A
 ### Epicodus JavaScript Week 3: Individual Project
+![project screenshot](screenshot.png)
+
 ### by [Karen Freeman-Smith](https://karenfreemansmith.github.io)
 
 ### Description
