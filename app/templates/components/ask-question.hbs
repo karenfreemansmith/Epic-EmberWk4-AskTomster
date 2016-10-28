@@ -3,14 +3,14 @@
     <h3>Ask Tomster a Question</h3>
     <form>
       <div>
-        <p>What is your name? {{input value="your name" id="username"}}</p>
+        <p>What is your name? {{input value=username id="username"}}</p>
       </div>
       <div>
-        <p>What is your question? {{input value="your question" id="question"}}</p>
+        <p>What is your question? {{input value=question id="question"}}</p>
       </div>
       <div>
         <p>Are there any other details that we should know about your question?</p>
-        {{tinymce-editor options=options value=text id="notes"}}
+        {{tinymce-editor options=options value=details id="details"}}
       </div>
       <button {{action 'saveQuestion'}} class="button">Submit Question</button>
     </form>
