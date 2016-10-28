@@ -1,1 +1,20 @@
-{{yield}}
+<div class="listing">
+  {{#if askQuestion}}
+    <h3>Ask Tomster a Question</h3>
+    <form>
+      <div>
+        <p>What is your name? {{input value="your name" id="username"}}</p>
+      </div>
+      <div>
+        <p>What is your question? {{input value="your question" id="question"}}</p>
+      </div>
+      <div>
+        <p>Are there any other details that we should know about your question?</p>
+        {{tinymce-editor options=options value=text id="notes"}}
+      </div>
+      <button {{action 'saveQuestion'}} class="button">Submit Question</button>
+    </form>
+  {{else}}
+    <button {{action 'showQuestionForm'}} class="button">Ask a Question</button>
+  {{/if}}
+</div>

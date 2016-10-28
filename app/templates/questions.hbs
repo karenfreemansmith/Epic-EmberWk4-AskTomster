@@ -11,21 +11,7 @@
     </ul>
   </p>
 </div>
-<div>
-  {{#link-to 'about' class="button"}}
-    Ask a Question
-  {{/link-to}}
-  <h3>Ask Tomster a Question</h3>
-  <form>
-    <div>
-      <p>What is your name? {{input value="your name" id="username"}}</p>
-    </div>
-    <div>
-      <p>What is your question? {{input value="your question" id="question"}}</p>
-    </div>
-    <div>
-      <p>Are there any other details that we should know about your question?</p>
-      {{tinymce-editor options=options value=text id="notes"}}
-    </div>
-  </form>
-</div>
+{{ask-question}}
+{{#each model as |question|}}
+  {{list-questions question=question}}
+{{/each}}

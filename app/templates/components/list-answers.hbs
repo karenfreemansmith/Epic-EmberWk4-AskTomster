@@ -1,1 +1,9 @@
-{{yield}}
+{{#if listAnswers}}
+  <button {{action 'hideAnswers'}} class="button">Hide Answers</button>
+  {{#each model as |answer|}}
+    <h5>{{answer.username}}</h5>
+    <p>{{answer.text}}</p>
+  {{/each}}
+{{else}}
+  <button {{action 'showAnswers'}} class="button">Show Answers</button>
+{{/if}}
