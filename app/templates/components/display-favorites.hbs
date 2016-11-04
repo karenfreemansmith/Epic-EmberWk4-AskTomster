@@ -1,0 +1,4 @@
+<h3>Favorite Questions</h3>
+{{#each favQuestions.questions as |question|}}
+    <h3>{{question.title}}</h3> <button {{action 'deleteFavorite' question}} class="button">Remove Question</button>
+{{/each}}

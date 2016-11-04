@@ -11,6 +11,9 @@
     </ul>
   </p>
 </div>
+<div>
+  {{#link-to 'favorites'}}View Favorites{{/link-to}}
+</div>
 {{ask-question saveQuestion="saveQuestion"}}
 {{#each model.questions as |question|}}
   {{list-questions question=question editQuestion="editQuestion" saveAnswer="saveAnswer"}}
