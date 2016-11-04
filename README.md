@@ -19,13 +19,6 @@ Building a Q & A board with Ember.
   * Add a computed property - will return a random answer from our mascot(s)
   * Add a helper - will highlight questions with no answers and most popular/answered questions
   * Integrate a service - allow user to login and saves their user information
-* Additional (week 4 optional)
-  * Add tags/categories to questions
-  * Find and integrate a quote API to "answer" questions based on tag/category
-  * Filter questions by category
-  * Develop some kind of user "karama" ranking
-  * Display users on leaderboard based on their "karma"
-* Also FIX rich text control to display more consistently (multiple times on a page? page reload)
 
 ## Prerequisites
 
