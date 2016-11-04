@@ -1,5 +1,5 @@
 <div class="listing">
   <h4><em>{{question.username}} asks: </em></h4>
-  <h3>{{question.title}}</h3>
+  <h3>{{questionPopularity question}} {{question.title}}</h3>
   {{show-details question=question editQuestion="editQuestion" saveAnswer="saveAnswer"}}
 </div>

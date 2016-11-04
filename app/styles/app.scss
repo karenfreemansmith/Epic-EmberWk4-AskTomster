@@ -1,3 +1,6 @@
+$orange: #E14D33;
+$green: #4A4939;
+
 li {
   margin-left: 30px;
   font-style: italic;
@@ -6,4 +9,22 @@ li {
 p, input {
   font-size: 1.0em;
   font-family: georgia, serif;
+}
+
+.fa-file-o {
+  color: $orange;
+  font-size: 1.8em;
+}
+
+.fa-line-chart {
+  color: $orange;
+  font-size: 1.8em;
+}
+
+.button {
+  background: $green;
+}
+
+.menu {
+  background-color: $orange;
 }
