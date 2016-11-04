@@ -19,6 +19,7 @@
   {{else}}
     <p>{{{question.details}}}</p>
     <h4>Tomster's Answer: {{question.tomster}}</h4>
+    <h4>Zoey's Answer: {{zoeyAnswer}}</h4>
     <p>{{answer-question saveAnswer="saveAnswer" question=question}}</p>
     {{#each question.answers as |answer|}}
       <h5>{{answer.username}}</h5>
